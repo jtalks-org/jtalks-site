@@ -19,6 +19,14 @@
   <!--[if lt IE 9]>
   <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
   <![endif]-->
+  <script src="js/jssor.slider.min.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+  <script>
+    jQuery(document).ready(function ($) {
+      var options = { $AutoPlay: true };
+      var jssor_slider1 = new $JssorSlider$('slider1_container', options);
+    });
+  </script>
 </head>
 
 <body>
@@ -40,7 +48,7 @@
     <h1>Welcome to JTalks project!</h1>
 
     <p class="lead">JTalks is an open source project developed by <a href="http://javatalks.ru/">JavaTalks
-      community</a>. We write apps like Forums, Articles as well as tools that help dev and test engineers.
+      community</a>. We write apps like Forum & Article engines as well as tools that help dev and test engineers.
     </p>
 
     <p><a class="btn btn-lg btn-success" href="#" role="button">Get started today</a></p>
@@ -48,26 +56,14 @@
 
   <!-- Example row of columns -->
   <div class="row">
-    <div class="col-lg-4">
-      <h2>Our Projects</h2>
-
-      <p class="text-danger">As of v7.0.1, Safari exhibits a bug in which resizing your browser horizontally causes
-        rendering errors in the justified nav that are cleared upon refreshing.</p>
-
-      <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris
-        condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec
-        sed odio dui. </p>
-
-      <p><a class="btn btn-primary" href="#" role="button">View details &raquo;</a></p>
-    </div>
-    <div class="col-lg-4">
-      <h2>Tools</h2>
-
-      <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris
-        condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec
-        sed odio dui. </p>
-
-      <p><a class="btn btn-primary" href="#" role="button">View details &raquo;</a></p>
+    <div class="col-lg-7">
+      <div id="slider1_container" style="position: relative; top: 0px; left: 0px; width: 600px; height: 300px;">
+        <!-- Slides Container -->
+        <div u="slides" style="cursor: move; position: absolute; overflow: hidden; left: 0px; top: 0px; width: 600px; height: 300px;">
+          <div><img u="image" src="projects/jcommune-sample-big.png" /></div>
+          <div><img u="image" src="projects/antarcticle-sample-big.png" /></div>
+        </div>
+      </div>
     </div>
     <div class="col-lg-4">
       <h2>Community</h2>
