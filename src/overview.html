@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>JTalks Open Source</title>
+
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+
+  <!-- Custom styles for this template -->
+  <link href="css/app.css" rel="stylesheet">
+
+  <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+  <![endif]-->
+  <script src="js/jssor.slider.min.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+  <script>
+    jQuery(document).ready(function ($) {
+      var options = { $AutoPlay: true };
+      new $JssorSlider$('jcommune-slider', options);
+      new $JssorSlider$('antarcticle-slider', options);
+    });
+  </script>
+</head>
+
+<body>
+
+<div class="container">
+
+  <div class="masthead">
+    <ul class="nav nav-justified">
+      <li class="active"><a href="index.html">Main</a></li>
+      <li><a href="overview.html">Products</a></li>
+      <li><a href="http://jtalks.org/display/jtalks/JTalks+Home+Page">Wiki</a></li>
+      <li><a href="http://jira.jtalks.org">JIRA</a></li>
+      <li><a href="http://jtalks.org/display/jtalks/Our+Sponsors">Our Sponsors</a></li>
+    </ul>
+  </div>
+  <p>Here is a list of products and tools we work on</p>
+  <!-- Example row of columns -->
+  <div>
+  <div class="">
+    <div class="col-lg-7">
+      <div id="jcommune-slider" style="position: relative; top: 0; left: 0; width: 600px; height: 300px;">
+        <!-- Slides Container -->
+        <div u="slides"
+             style="cursor: move; position: absolute; overflow: hidden; left: 0; top: 0; width: 600px; height: 300px;">
+          <div><img u="image" src="img/jcommune-sample-big.png"/></div>
+          <div><img u="image" src="img/antarcticle-sample-big.png"/></div>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-4">
+      <h2 class="text-center">JCommune</h2>
+
+      <p>A forum engine written in Java. Its architecture supports plugins and therefore is extensible. JCommune is
+        integrated with other JTalks apps and thus if you like you can use either forum as a standalone app or install
+        it
+        together with Antarcticle and have same users being able to leave questions and write articles.
+      </p>
+
+      <p class="text-center">
+        <a class="btn btn-primary" href="http://dev.jtalks.org/jcommune" role="button">Live Demo &raquo;</a>
+        <a class="btn btn-success" href="https://github.com/jtalks-org/jcommune" role="button">GitHub &raquo;</a>
+      </p>
+    </div>
+  </div>
+  </div>
+
+
+  <div class="row">
+    <div class="col-lg-7">
+      <div id="antarcticle-slider" style="position: relative; top: 0; left: 0; width: 600px; height: 300px;">
+        <!-- Slides Container -->
+        <div u="slides"
+             style="cursor: move; position: absolute; overflow: hidden; left: 0; top: 0; width: 600px; height: 300px;">
+          <div><img u="image" src="img/jcommune-sample-big.png"/></div>
+          <div><img u="image" src="img/antarcticle-sample-big.png"/></div>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-4">
+      <h2 class="text-center">JCommune</h2>
+
+      <p>A forum engine written in Java. Its architecture supports plugins and therefore is extensible. JCommune is
+        integrated with other JTalks apps and thus if you like you can use either forum as a standalone app or install
+        it
+        together with Antarcticle and have same users being able to leave questions and write articles.
+      </p>
+
+      <p class="text-center">
+        <a class="btn btn-primary" href="http://dev.jtalks.org/jcommune" role="button">Live Demo &raquo;</a>
+        <a class="btn btn-success" href="https://github.com/jtalks-org/jcommune" role="button">GitHub &raquo;</a>
+      </p>
+    </div>
+  </div>
+  <!-- Site footer -->
+  <div class="footer">
+    <p>&copy; JTalks 2011-2014</p>
+  </div>
+
+</div>
+<!-- /container -->
+</body>
+</html>
