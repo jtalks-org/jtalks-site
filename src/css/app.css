@@ -104,7 +104,7 @@ body {
 .nav-main > li {
     float:left;
     border-right: 1px solid #d5d5d5;
-    width: 32%;
+    width: 32%; /*Because there are 3 items, change it if more items appear*/
 }
 
 .nav-main > li:last-child {
@@ -116,12 +116,13 @@ body {
     color: #777;
 }
 
-.nav-main > .active > a,
-.nav-main > .active > a:hover,
-.nav-main > .active > a:focus {
-    background-color: #ddd;
-    background-image: none;
-    box-shadow: inset 0 3px 7px rgba(0, 0, 0, .15);
+.nav-main > li > a:hover,
+.nav-main li:hover,
+.nav-main li:focus,
+.nav-main> li > a:focus {
+    text-decoration: underline;
+    background-image: inherit; /* FF3.6+ */
+
 }
 
 /* Responsive: Portrait tablets and up */
