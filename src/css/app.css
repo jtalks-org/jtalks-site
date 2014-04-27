@@ -143,3 +143,13 @@ body {
     box-shadow: 0 0 5px #888888;
     border-radius: 2px;
 }
+
+.sponsor {
+    width: 30%;
+    padding-top: 30px;
+}
+
+.sponsor > a > img {
+    width: 100%;
+
+}
