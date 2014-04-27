@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>JTalks Open Source</title>
+
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+
+  <!-- Custom styles for this template -->
+  <link href="css/app.css" rel="stylesheet">
+
+  <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+  <![endif]-->
+  <script src="js/jssor.slider.min.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+  <script>
+    jQuery(document).ready(function ($) {
+      var options = { $AutoPlay: true, $SlideDuration: 1000 };
+      new $JssorSlider$('jcommune-slider', options);
+      new $JssorSlider$('antarcticle-slider', options);
+    });
+  </script>
+</head>
+
+<body>
+
+<div class="container">
+
+  <div class="masthead">
+    <ul class="nav nav-justified">
+      <li><a href="index.html">Main</a></li>
+      <li><a href="overview.html">Products</a></li>
+      <li><a href="http://jtalks.org/display/jtalks/JTalks+Home+Page">Wiki</a></li>
+      <li><a href="http://jira.jtalks.org">JIRA</a></li>
+      <li class="active"><a href="sponsors.html">Our Sponsors</a></li>
+    </ul>
+  </div>
+  <h1 class="masthead text-center">Companies who support Open Source</h1>
+  <!-- Example row of columns -->
+  <div>
+    <div class="row product-row well">
+      <div class="col-lg-4">
+        <h2 class="text-center">Atlassian</h2>
+
+        <p> We use several Atlassian's products: JIRA, JIRA Agile, Fisheye
+        </p>
+
+        <p class="text-center">
+          <a class="btn btn-primary" href="http://dev.jtalks.org/jcommune" target="_blank" role="button">Official site &raquo;</a>
+        </p>
+      </div>
+    </div>
+  </div>
+  <div class="row product-row well">
+    <div class="col-lg-4">
+      <h2 class="text-center">Jet Brains</h2>
+
+      <p>IDEA
+      </p>
+
+      <p class="text-center">
+        <a class="btn btn-primary" href="http://qa.jtalks.org/antarcticle" target="_blank" role="button">Live
+          Demo &raquo;</a>
+        <a class="btn btn-success" href="https://github.com/jtalks-org/antarcticle-scala" target="_blank" role="button">GitHub &raquo;</a>
+      </p>
+    </div>
+    <div class="col-lg-7">
+      <div id="antarcticle-slider" class="product-slider" style="position: relative; top: 0; left: 0; width: 750px; height: 375px;">
+        <div u="slides" class="slider"
+             style="cursor: move; position: absolute; overflow: hidden; left: 0; top: 0; width: 750px; height: 375px;">
+          <div><img u="image" src="img/antarcticle-sample-big.png"/></div>
+          <div><img u="image" src="img/antarcticle-view-article.png"/></div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <!-- Site footer -->
+  <div class="footer">
+    <p>&copy; JTalks 2011-2014</p>
+  </div>
+
+</div>
+<!-- /container -->
+</body>
+</html>
